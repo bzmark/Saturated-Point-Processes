@@ -6,10 +6,10 @@ $$\log(\mu_t) = \nu+Ag(X_t)$$
 
 Where g is a saturation function which forces stability of the process, and estimate A using regularized MLE for the following penalties:
 
-..* l_1 norm
-..* Nuclear norm
-..* Group lasso
-..* Nuclear norm plus l_1 norm
+* l_1 norm
+* Nuclear norm
+* Group lasso
+* Nuclear norm plus l_1 norm
 
 We also implement ARMA(1,1) model estimation with sparsity regularization.  
 
