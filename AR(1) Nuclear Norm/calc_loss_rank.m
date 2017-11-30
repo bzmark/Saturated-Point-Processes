@@ -1,4 +1,4 @@
-function ls=calc_loss_sparse(A,X,X0,lambda,T,K)
+function ls=calc_loss_rank(A,X,X0,lambda,T,K)
 
 %calculate negative log-likelihood
 ls=0;
@@ -13,16 +13,13 @@ for t=1:(T-1)
     end
 end
 
-
-%add l_1 penalty
-one_norm=0;
+%add nuclear norm penalty 
+nuclear_norm=0;
+[~,D,~]=svd(A);
 for i=1:length(A)
-    for j=1:length(A)
-        one_norm=one_norm+abs(A(i,j));
-    end
+        nuclear_norm=nuclear_norm+abs(D(i,i));
 end
 
-ls=ls+lambda*one_norm;
+ls=ls+lambda*nuclear_norm;
 
 end
-
