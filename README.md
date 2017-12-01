@@ -1,7 +1,6 @@
 This repository contains code which for estimating high-dimensional networks using saturated log-linear point process models.  We consider a variant of a GLM: 
 
-$$X_{t+1} \sim \mbox{Poisson}(\mu_t)$$
-$$\log(\mu_t) = \nu+Ag(X_t)$$
+![alt text](https://github.com/bzmark/Saturated-Point-Processes/blob/master/AR(1)%20NN%20and%20Sparsity/equation.png)
 
 
 Where g is a saturation function which forces stability of the process, and estimate A using regularized MLE for the following penalties:
