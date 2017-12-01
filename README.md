@@ -1,7 +1,7 @@
 This repository contains code which for estimating high-dimensional networks using saturated log-linear point process models.  We consider a variant of a GLM: 
 
 <p align="center">
-![alt text](https://github.com/bzmark/Saturated-Point-Processes/blob/master/AR(1)%20NN%20and%20Sparsity/equation.png)
+<img src="https://github.com/bzmark/Saturated-Point-Processes/blob/master/AR(1)%20NN%20and%20Sparsity/equation.png" />
 </p>
 
 Where g is a saturation function which forces stability of the process, and estimate A using regularized MLE for the following penalties:
