@@ -4,7 +4,7 @@ This repository contains code which for estimating high-dimensional networks gen
 <img src="https://github.com/bzmark/Saturated-Point-Processes/blob/master/AR(1)%20NN%20and%20Sparsity/equation.png" />
 </p>
 
-Where g is a saturation function which forces stability of the process.  To estimate the matrix A we use regularized MLE for the following penalties:
+Where g is a saturation function which forces stability of the process.  To estimate the matrix A we use regularized MLE with the following penalties:
 
 * l_1 norm
 * Nuclear norm
